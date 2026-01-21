@@ -1,0 +1,22 @@
+2025-10-06 20:08:09,518 INFO [CDLuneScore_rotated]                 Book.java:562  | 1 sheet in /Users/hannahhughes30/PianoToolProject/data/processed/CDLuneScore_rotated.png
+2025-10-06 20:08:09,588 INFO []                 Book.java:2531 | Stored /book.xml
+2025-10-06 20:08:09,588 INFO []                 Book.java:2491 | Book stored as test_output.mxl/CDLuneScore_rotated.omr
+2025-10-06 20:08:09,590 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2025-10-06 20:08:09,590 INFO [CDLuneScore_rotated]       StepMonitoring.java:98   | LOAD
+2025-10-06 20:08:09,639 INFO [CDLuneScore_rotated]            SheetStub.java:1273 | Loaded image #1 1110x1568 from /Users/hannahhughes30/PianoToolProject/data/processed/CDLuneScore_rotated.png
+2025-10-06 20:08:09,640 INFO [CDLuneScore_rotated]            ImageUtil.java:124  | Converting max RGB to gray
+2025-10-06 20:08:09,681 INFO [CDLuneScore_rotated]       StepMonitoring.java:98   | BINARY
+2025-10-06 20:08:09,790 INFO [CDLuneScore_rotated]       StepMonitoring.java:98   | SCALE
+2025-10-06 20:08:09,803 WARN [CDLuneScore_rotated]            SheetStub.java:412  | CDLuneScore_rotated   With a too low interline value of 10 pixels,  either this sheet contains no multi-line staves,  or the picture resolution is too low (try 300 DPI).   This interline value is NOT RELIABLE!
+2025-10-06 20:08:09,803 INFO [CDLuneScore_rotated]                 Book.java:545  | Created scores: []
+2025-10-06 20:08:09,803 INFO [CDLuneScore_rotated]            SheetStub.java:1191 | Sheet CDLuneScore_rotated flagged as invalid.
+2025-10-06 20:08:09,803 INFO [CDLuneScore_rotated]            SheetStub.java:1410 | StepException cause detected in [LOAD, BINARY, SCALE, GRID, HEADERS, STEM_SEEDS, BEAMS, LEDGERS, HEADS, STEMS, REDUCTION, CUE_BEAMS, TEXTS, MEASURES, CHORDS, CURVES, SYMBOLS, LINKS, RHYTHMS, PAGE]
+2025-10-06 20:08:09,803 INFO [CDLuneScore_rotated]                 Book.java:2550 | Book{CDLuneScore_rotated} storing
+2025-10-06 20:08:09,811 INFO [CDLuneScore_rotated]                 Book.java:2531 | Stored /book.xml
+2025-10-06 20:08:09,838 INFO [CDLuneScore_rotated]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-10-06 20:08:09,931 INFO [CDLuneScore_rotated]                Sheet.java:1583 | Stored /sheet#1/sheet#1.xml
+2025-10-06 20:08:09,931 INFO [CDLuneScore_rotated]                 Book.java:2491 | Book stored as test_output.mxl/CDLuneScore_rotated.omr
+2025-10-06 20:08:09,932 INFO [CDLuneScore_rotated]            SheetStub.java:1660 | Disposed sheet
+2025-10-06 20:08:09,947 INFO [CDLuneScore_rotated]                 Book.java:2018 | End of Stub#1 memory: 11,599,816
+2025-10-06 20:08:09,948 INFO [CDLuneScore_rotated]                 Book.java:2025 | Book processed.
+2025-10-06 20:08:09,948 INFO [CDLuneScore_rotated]                 Book.java:599  | Could not export since transcription did not complete successfully

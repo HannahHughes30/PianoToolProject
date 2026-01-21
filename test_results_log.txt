@@ -1,0 +1,62 @@
+PIANO OMR TEST RESULTS - Sun Oct 19 23:13:24 PDT 2025
+=======================================
+
+Testing: piano1.pdf
+  ✓ Successfully extracted 206 notes from page 1
+---
+Testing: piano10_4shorteasy.pdf
+  ✓ Successfully extracted 142 notes from page 1
+---
+Testing: piano11_3shortpieces.pdf
+  ✓ Successfully extracted 192 notes from page 3
+---
+Testing: piano12_bach.pdf
+  ✓ Successfully extracted 185 notes from page 3
+---
+Testing: piano13_louistogaben.pdf
+  ✓ Successfully extracted 185 notes from page 2
+---
+Testing: piano14_march.pdf
+  ✓ Successfully extracted 168 notes from page 1
+---
+Testing: piano15_cathcypiano.pdf
+  ✓ Successfully extracted 182 notes from page 1
+---
+Testing: piano16_morgengebet.pdf
+  ✓ Successfully extracted 235 notes from page 1
+---
+Testing: piano17_cmajor.pdf
+  ✓ Successfully extracted 94 notes from page 1
+---
+Testing: piano18_nottoscale.pdf
+  ✓ Successfully extracted 224 notes from page 1
+---
+Testing: piano2_March.pdf
+  ✓ Successfully extracted 168 notes from page 1
+---
+Testing: piano3_cabinsong.pdf
+  ✓ Successfully extracted 72 notes from page 1
+---
+Testing: piano4_fourpieces.pdf
+  ✓ Successfully extracted 152 notes from page 2
+---
+Testing: piano5_cornflower.pdf
+  ✓ Successfully extracted 75 notes from page 1
+---
+Testing: piano6_swirling.pdf
+  ✓ Successfully extracted 259 notes from page 1
+---
+Testing: piano9_mamaswaltz.pdf
+  ✓ Successfully extracted 228 notes from page 3
+---
+Testing: Piano12_etudeincmajor.pdf
+  ✓ Successfully extracted 139 notes from page 3
+---
+Testing: Piano7_candace.pdf
+  ✓ Successfully extracted 111 notes from page 1
+---
+Testing: Piano8_floatingclouds.pdf
+  ✓ Successfully extracted 271 notes from page 1
+---
+
+Test complete!

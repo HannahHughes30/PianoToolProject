@@ -1,0 +1,21 @@
+2026-01-20 11:56:28,806 INFO [temp_piano4_fourpieces_page1]                 Book.java:562  | 1 sheet in /Users/hannahhughes30/PianoToolProject/data/omr_output/temp_piano4_fourpieces_page1.png
+2026-01-20 11:56:28,881 INFO []                 Book.java:2531 | Stored /book.xml
+2026-01-20 11:56:28,881 INFO []                 Book.java:2491 | Book stored as data/omr_output/piano4_fourpieces_page1/temp_piano4_fourpieces_page1.omr
+2026-01-20 11:56:28,883 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2026-01-20 11:56:28,883 INFO [temp_piano4_fourpieces_page1]       StepMonitoring.java:98   | LOAD
+2026-01-20 11:56:29,018 INFO [temp_piano4_fourpieces_page1]            SheetStub.java:1273 | Loaded image #1 3000x3659 from /Users/hannahhughes30/PianoToolProject/data/omr_output/temp_piano4_fourpieces_page1.png
+2026-01-20 11:56:29,019 INFO [temp_piano4_fourpieces_page1]            ImageUtil.java:124  | Converting max RGB to gray
+2026-01-20 11:56:29,187 INFO [temp_piano4_fourpieces_page1]       StepMonitoring.java:98   | BINARY
+2026-01-20 11:56:29,484 INFO [temp_piano4_fourpieces_page1]       StepMonitoring.java:98   | SCALE
+2026-01-20 11:56:29,493 INFO [temp_piano4_fourpieces_page1]                 Book.java:545  | Created scores: []
+2026-01-20 11:56:29,494 INFO [temp_piano4_fourpieces_page1]            SheetStub.java:1191 | Sheet temp_piano4_fourpieces_page1 flagged as invalid.
+2026-01-20 11:56:29,494 INFO [temp_piano4_fourpieces_page1]            SheetStub.java:1410 | StepException cause detected in [LOAD, BINARY, SCALE, GRID, HEADERS, STEM_SEEDS, BEAMS, LEDGERS, HEADS, STEMS, REDUCTION, CUE_BEAMS, TEXTS, MEASURES, CHORDS, CURVES, SYMBOLS, LINKS, RHYTHMS, PAGE]
+2026-01-20 11:56:29,494 INFO [temp_piano4_fourpieces_page1]                 Book.java:2550 | Book{temp_piano4_fourpieces_page1} storing
+2026-01-20 11:56:29,502 INFO [temp_piano4_fourpieces_page1]                 Book.java:2531 | Stored /book.xml
+2026-01-20 11:56:29,595 INFO [temp_piano4_fourpieces_page1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2026-01-20 11:56:29,689 INFO [temp_piano4_fourpieces_page1]                Sheet.java:1583 | Stored /sheet#1/sheet#1.xml
+2026-01-20 11:56:29,689 INFO [temp_piano4_fourpieces_page1]                 Book.java:2491 | Book stored as data/omr_output/piano4_fourpieces_page1/temp_piano4_fourpieces_page1.omr
+2026-01-20 11:56:29,690 INFO [temp_piano4_fourpieces_page1]            SheetStub.java:1660 | Disposed sheet
+2026-01-20 11:56:29,707 INFO [temp_piano4_fourpieces_page1]                 Book.java:2018 | End of Stub#1 memory: 11,596,232
+2026-01-20 11:56:29,707 INFO [temp_piano4_fourpieces_page1]                 Book.java:2025 | Book processed.
+2026-01-20 11:56:29,707 INFO [temp_piano4_fourpieces_page1]                 Book.java:599  | Could not export since transcription did not complete successfully

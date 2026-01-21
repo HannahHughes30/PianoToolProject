@@ -1,0 +1,4 @@
+2025-10-06 20:14:11,044 WARN [Twinkle_Twinkle_Little_Star]         ImageLoading.java:216  | Cannot find a loader for /Users/hannahhughes30/PianoToolProject/data/test_sheets/Twinkle_Twinkle_Little_Star.png
+2025-10-06 20:14:11,113 INFO [Twinkle_Twinkle_Little_Star]                 Book.java:2531 | Stored /book.xml
+2025-10-06 20:14:11,113 INFO [Twinkle_Twinkle_Little_Star]                 Book.java:2491 | Book stored as test_twinkle.mxl/Twinkle_Twinkle_Little_Star.omr
+2025-10-06 20:14:11,114 INFO [Twinkle_Twinkle_Little_Star]                 Book.java:545  | Created scores: []

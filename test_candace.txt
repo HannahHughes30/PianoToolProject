@@ -1,0 +1,42 @@
+============================================================
+Testing Audiveris OMR System
+============================================================
+Clearing ALL cache files...
+Cache cleared!
+
+Processing PDF: Piano7_candace.pdf
+Converting PDF to individual pages...
+PDF has 3 pages
+
+Trying page 1/3...
+✓ Success! Found 111 notes on page 1
+
+============================================================
+SUCCESS! Extracted 111 notes
+============================================================
+
+First 20 notes:
+  1. Measure 1: C5 (duration: 1)
+  2. Measure 1: A4 (duration: 1)
+  3. Measure 2: G6 (duration: 3)
+  4. Measure 2: D5 (duration: 2)
+  5. Measure 2: A4 (duration: 1)
+  6. Measure 2: C5 (duration: 1)
+  7. Measure 2: E5 (duration: 1)
+  8. Measure 3: G6 (duration: 3)
+  9. Measure 3: D5 (duration: 2)
+  10. Measure 3: A4 (duration: 1)
+  11. Measure 3: C5 (duration: 1)
+  12. Measure 3: E5 (duration: 1)
+  13. Measure 4: G6 (duration: 3)
+  14. Measure 4: D5 (duration: 2)
+  15. Measure 4: A4 (duration: 1)
+  16. Measure 4: C5 (duration: 1)
+  17. Measure 4: E5 (duration: 1)
+  18. Measure 4: A3 (duration: 2)
+  19. Measure 4: E4 (duration: 2)
+  20. Measure 4: C4 (duration: 2)
+
+  ... and 91 more notes
+
+============================================================

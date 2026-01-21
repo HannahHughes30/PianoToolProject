@@ -1,0 +1,168 @@
+2025-10-06 20:20:25,115 ERROR [Twinkle_Twinkle_Little_Star]              IOUtils.java:278  | Unmapping is not supported.
+java.lang.reflect.InaccessibleObjectException: Unable to make public jdk.internal.ref.Cleaner java.nio.DirectByteBuffer.cleaner() accessible: module java.base does not "opens java.nio" to unnamed module @662ac478
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Unknown Source)
+	at java.base/java.lang.reflect.Method.setAccessible(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.unmapper(IOUtils.java:244)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.apache.pdfbox.io.IOUtils.<clinit>(IOUtils.java:69)
+	at org.apache.pdfbox.Loader.loadPDF(Loader.java:378)
+	at org.audiveris.omr.image.ImageLoading.getPdfLoader(ImageLoading.java:159)
+	at org.audiveris.omr.image.ImageLoading.getLoader(ImageLoading.java:209)
+	at org.audiveris.omr.sheet.Book.createStubs(Book.java:557)
+	at org.audiveris.omr.CLI$ProcessingTask.processBook(CLI.java:830)
+	at org.audiveris.omr.CLI$CliTask.call(CLI.java:504)
+	at org.audiveris.omr.Main.runBatchTasks(Main.java:371)
+	at org.audiveris.omr.Main.main(Main.java:260)
+	at Audiveris.main(Audiveris.java:50)
+2025-10-06 20:20:25,149 INFO [Twinkle_Twinkle_Little_Star]                 Book.java:562  | 2 sheets in /Users/hannahhughes30/PianoToolProject/data/test_sheets/Twinkle_Twinkle_Little_Star.pdf
+2025-10-06 20:20:25,214 INFO []                 Book.java:2531 | Stored /book.xml
+2025-10-06 20:20:25,214 INFO []                 Book.java:2491 | Book stored as test_twinkle.mxl/Twinkle_Twinkle_Little_Star.omr
+2025-10-06 20:20:25,215 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2]
+2025-10-06 20:20:25,216 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | LOAD
+2025-10-06 20:20:25,330 INFO [Twinkle_Twinkle_Little_Star#1] FileSystemFontProvider.java:665  | 360 new font files found, font cache will be re-built
+2025-10-06 20:20:25,331 INFO [Twinkle_Twinkle_Little_Star#1] FileSystemFontProvider.java:369  | Building on-disk font cache, this may take a while
+2025-10-06 20:20:26,047 WARN [Twinkle_Twinkle_Little_Star#1] FileSystemFontProvider.java:808  | Could not load font file '/System/Library/Fonts/Supplemental/NISC18030.ttf': 'head' table is mandatory
+2025-10-06 20:20:26,897 INFO [Twinkle_Twinkle_Little_Star#1] FileSystemFontProvider.java:372  | Finished building on-disk font cache, found 784 fonts
+2025-10-06 20:20:26,940 INFO [Twinkle_Twinkle_Little_Star#1]            SheetStub.java:1273 | Loaded image #1 2550x3299 from /Users/hannahhughes30/PianoToolProject/data/test_sheets/Twinkle_Twinkle_Little_Star.pdf
+2025-10-06 20:20:26,942 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | BINARY
+2025-10-06 20:20:27,184 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | SCALE
+2025-10-06 20:20:27,200 INFO [Twinkle_Twinkle_Little_Star#1]         ScaleBuilder.java:241  | Beam  guessed height: 16 -- 0.50 of 32 interline
+2025-10-06 20:20:27,201 INFO [Twinkle_Twinkle_Little_Star#1]         ScaleBuilder.java:264  | Beam measured height: 12 -- 0.13 of [9..32] range at 96% of needed quorum
+2025-10-06 20:20:27,201 WARN [Twinkle_Twinkle_Little_Star#1]         ScaleBuilder.java:293  | No reliable beam height found, guessed value: 16
+2025-10-06 20:20:27,201 INFO [Twinkle_Twinkle_Little_Star#1]            ScaleStep.java:65   | Scale{ small_interline(21,21,22) interline(32,32,32) line(2,2,2) beam(16 extra)}
+2025-10-06 20:20:27,201 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | GRID
+2025-10-06 20:20:27,359 INFO [Twinkle_Twinkle_Little_Star#1]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-10-06 20:20:27,368 INFO [Twinkle_Twinkle_Little_Star#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 4 of sizes [5] with interline(32,32,32)
+2025-10-06 20:20:27,369 INFO [Twinkle_Twinkle_Little_Star#1]       LinesRetriever.java:1516 | Searching clusters with smallInterline: 21
+2025-10-06 20:20:27,373 INFO [Twinkle_Twinkle_Little_Star#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 4 of sizes [5] with interline(21,21,22)
+2025-10-06 20:20:27,434 INFO [Twinkle_Twinkle_Little_Star#1]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2025-10-06 20:20:27,459 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1304 | System#1
+2025-10-06 20:20:27,459 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:1-2}
+2025-10-06 20:20:27,459 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1304 | System#2
+2025-10-06 20:20:27,459 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:3-4}
+2025-10-06 20:20:27,460 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1304 | System#3
+2025-10-06 20:20:27,460 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:5-6}
+2025-10-06 20:20:27,460 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1304 | System#4
+2025-10-06 20:20:27,460 INFO [Twinkle_Twinkle_Little_Star#1]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:7-8}
+2025-10-06 20:20:27,585 INFO [Twinkle_Twinkle_Little_Star#1]        SystemManager.java:134  | Indentation detected for system #1
+2025-10-06 20:20:27,585 INFO [Twinkle_Twinkle_Little_Star#1]        SystemManager.java:779  | 2 parts along 4 systems
+2025-10-06 20:20:27,585 INFO [Twinkle_Twinkle_Little_Star#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-10-06 20:20:27,586 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | HEADERS
+2025-10-06 20:20:27,697 INFO [Twinkle_Twinkle_Little_Star#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-10-06 20:20:27,698 INFO [Twinkle_Twinkle_Little_Star#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Applications/Audiveris.app/Contents/app/audiveris.jar!/res/basic-classifier.zip
+2025-10-06 20:20:28,042 WARN [Twinkle_Twinkle_Little_Star#1]          ClefBuilder.java:658  | Staff#2 no recognized header clef.
+2025-10-06 20:20:28,071 WARN [Twinkle_Twinkle_Little_Star#1]          ClefBuilder.java:658  | Staff#4 no recognized header clef.
+2025-10-06 20:20:28,081 WARN [Twinkle_Twinkle_Little_Star#1]          ClefBuilder.java:658  | Staff#6 no recognized header clef.
+2025-10-06 20:20:28,092 WARN [Twinkle_Twinkle_Little_Star#1]          ClefBuilder.java:658  | Staff#8 no recognized header clef.
+2025-10-06 20:20:28,102 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-10-06 20:20:28,131 INFO [Twinkle_Twinkle_Little_Star#1]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-10-06 20:20:28,148 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | BEAMS
+2025-10-06 20:20:31,914 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | LEDGERS
+2025-10-06 20:20:32,001 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | HEADS
+2025-10-06 20:20:35,435 INFO [Twinkle_Twinkle_Little_Star#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.4,R:-0.5]}
+2025-10-06 20:20:35,436 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | STEMS
+2025-10-06 20:20:35,584 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | REDUCTION
+2025-10-06 20:20:35,611 INFO [Twinkle_Twinkle_Little_Star#1]        ReductionStep.java:105  | Stems free length median value: 75 pixels, 2.3 interlines
+2025-10-06 20:20:35,613 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-10-06 20:20:35,613 INFO [Twinkle_Twinkle_Little_Star#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-10-06 20:20:35,613 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | TEXTS
+2025-10-06 20:20:35,677 WARN [Twinkle_Twinkle_Little_Star#1]         TesseractOCR.java:335  | The collection of supported languages is empty
+2025-10-06 20:20:35,677 INFO [Twinkle_Twinkle_Little_Star#1]              OcrUtil.java:106  | Missing support for 'eng' language(s)
+2025-10-06 20:20:35,685 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | MEASURES
+2025-10-06 20:20:35,690 INFO [Twinkle_Twinkle_Little_Star#1]                 Page.java:307  | 20 raw measures: [5 in system#1, 6 in system#2, 5 in system#3, 4 in system#4]
+2025-10-06 20:20:35,690 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | CHORDS
+2025-10-06 20:20:35,695 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | CURVES
+2025-10-06 20:20:36,364 INFO [Twinkle_Twinkle_Little_Star#1]         SlursBuilder.java:240  | Slurs: 7
+2025-10-06 20:20:36,577 INFO [Twinkle_Twinkle_Little_Star#1]      SegmentsBuilder.java:155  | Segments: 26
+2025-10-06 20:20:36,583 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | SYMBOLS
+2025-10-06 20:20:36,833 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | LINKS
+2025-10-06 20:20:36,844 INFO [Twinkle_Twinkle_Little_Star#1]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#2485{(0.149) staff:8 OTTAVA BASSA}
+2025-10-06 20:20:36,848 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | RHYTHMS
+2025-10-06 20:20:36,868 INFO [Twinkle_Twinkle_Little_Star#1]       StepMonitoring.java:98   | PAGE
+2025-10-06 20:20:36,871 WARN [Twinkle_Twinkle_Little_Star#1]         MeasureFixer.java:343  | System#1 No target duration for measures local IDs [1, 2, 3, 4, 5], please check time signatures
+2025-10-06 20:20:36,871 WARN [Twinkle_Twinkle_Little_Star#1]         MeasureFixer.java:343  | System#2 No target duration for measures local IDs [6, 7, 8, 9, 10, 11], please check time signatures
+2025-10-06 20:20:36,871 WARN [Twinkle_Twinkle_Little_Star#1]         MeasureFixer.java:343  | System#3 No target duration for measures local IDs [12, 13, 14, 15, 16], please check time signatures
+2025-10-06 20:20:36,871 WARN [Twinkle_Twinkle_Little_Star#1]         MeasureFixer.java:343  | System#4 No target duration for measures local IDs [17, 18, 19, 20], please check time signatures
+2025-10-06 20:20:36,872 INFO [Twinkle_Twinkle_Little_Star#1]                 Book.java:2550 | Book{Twinkle_Twinkle_Little_Star} storing
+2025-10-06 20:20:36,897 INFO [Twinkle_Twinkle_Little_Star#1]                 Book.java:2531 | Stored /book.xml
+2025-10-06 20:20:36,997 INFO [Twinkle_Twinkle_Little_Star#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-10-06 20:20:37,361 INFO [Twinkle_Twinkle_Little_Star#1]                Sheet.java:1583 | Stored /sheet#1/sheet#1.xml
+2025-10-06 20:20:37,361 INFO [Twinkle_Twinkle_Little_Star#1]                 Book.java:2491 | Book stored as test_twinkle.mxl/Twinkle_Twinkle_Little_Star.omr
+2025-10-06 20:20:37,362 INFO [Twinkle_Twinkle_Little_Star#1]            SheetStub.java:1660 | Disposed sheet#1
+2025-10-06 20:20:37,397 INFO [Twinkle_Twinkle_Little_Star#1]                 Book.java:2018 | End of Stub#1 memory: 42,871,928
+2025-10-06 20:20:37,398 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | LOAD
+2025-10-06 20:20:37,416 INFO [Twinkle_Twinkle_Little_Star#2]            SheetStub.java:1273 | Loaded image #2 2550x3299 from /Users/hannahhughes30/PianoToolProject/data/test_sheets/Twinkle_Twinkle_Little_Star.pdf
+2025-10-06 20:20:37,417 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | BINARY
+2025-10-06 20:20:37,624 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | SCALE
+2025-10-06 20:20:37,640 INFO [Twinkle_Twinkle_Little_Star#2]         ScaleBuilder.java:241  | Beam  guessed height: 16 -- 0.50 of 32 interline
+2025-10-06 20:20:37,641 INFO [Twinkle_Twinkle_Little_Star#2]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.09 of [9..32] range at 125% of needed quorum
+2025-10-06 20:20:37,641 INFO [Twinkle_Twinkle_Little_Star#2]            ScaleStep.java:65   | Scale{ small_interline(21,21,22) interline(32,32,32) line(2,2,2) beam(11)}
+2025-10-06 20:20:37,641 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | GRID
+2025-10-06 20:20:37,734 INFO [Twinkle_Twinkle_Little_Star#2]       LinesRetriever.java:1500 | Global slope: 0.00000
+2025-10-06 20:20:37,737 INFO [Twinkle_Twinkle_Little_Star#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 5 of sizes [5] with interline(32,32,32)
+2025-10-06 20:20:37,738 INFO [Twinkle_Twinkle_Little_Star#2]       LinesRetriever.java:1516 | Searching clusters with smallInterline: 21
+2025-10-06 20:20:37,740 INFO [Twinkle_Twinkle_Little_Star#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 5 of sizes [5] with interline(21,21,22)
+2025-10-06 20:20:37,769 INFO [Twinkle_Twinkle_Little_Star#2]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2025-10-06 20:20:37,778 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1304 | System#1
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:1-2}
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1304 | System#2
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:3-4}
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1304 | System#3
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:5-6}
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1304 | System#4
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:7-8}
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1304 | System#5
+2025-10-06 20:20:37,779 INFO [Twinkle_Twinkle_Little_Star#2]        BarsRetriever.java:1307 |    PartGroup{bracket number:1 barline:true staves:9-10}
+2025-10-06 20:20:37,834 INFO [Twinkle_Twinkle_Little_Star#2]        SystemManager.java:779  | 2 parts along 5 systems
+2025-10-06 20:20:37,834 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | HEADERS
+2025-10-06 20:20:37,842 WARN [Twinkle_Twinkle_Little_Star#2]          ClefBuilder.java:658  | Staff#2 no recognized header clef.
+2025-10-06 20:20:37,851 WARN [Twinkle_Twinkle_Little_Star#2]          ClefBuilder.java:658  | Staff#4 no recognized header clef.
+2025-10-06 20:20:37,861 WARN [Twinkle_Twinkle_Little_Star#2]          ClefBuilder.java:658  | Staff#6 no recognized header clef.
+2025-10-06 20:20:37,871 WARN [Twinkle_Twinkle_Little_Star#2]          ClefBuilder.java:658  | Staff#8 no recognized header clef.
+2025-10-06 20:20:37,885 WARN [Twinkle_Twinkle_Little_Star#2]          ClefBuilder.java:658  | Staff#10 no recognized header clef.
+2025-10-06 20:20:37,891 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-10-06 20:20:37,912 INFO [Twinkle_Twinkle_Little_Star#2]        StemSeedsStep.java:86   | stem(2 max:3)
+2025-10-06 20:20:37,919 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | BEAMS
+2025-10-06 20:20:39,662 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | LEDGERS
+2025-10-06 20:20:39,708 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | HEADS
+2025-10-06 20:20:43,746 INFO [Twinkle_Twinkle_Little_Star#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[R:-0.5] NOTEHEAD_BLACK[L:-0.3,R:-0.5]}
+2025-10-06 20:20:43,747 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | STEMS
+2025-10-06 20:20:43,825 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | REDUCTION
+2025-10-06 20:20:43,841 INFO [Twinkle_Twinkle_Little_Star#2]        ReductionStep.java:105  | Stems free length median value: 75 pixels, 2.3 interlines
+2025-10-06 20:20:43,841 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-10-06 20:20:43,842 INFO [Twinkle_Twinkle_Little_Star#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-10-06 20:20:43,842 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | TEXTS
+2025-10-06 20:20:43,888 WARN [Twinkle_Twinkle_Little_Star#2]         TesseractOCR.java:335  | The collection of supported languages is empty
+2025-10-06 20:20:43,888 INFO [Twinkle_Twinkle_Little_Star#2]              OcrUtil.java:106  | Missing support for 'eng' language(s)
+2025-10-06 20:20:43,889 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | MEASURES
+2025-10-06 20:20:43,890 INFO [Twinkle_Twinkle_Little_Star#2]                 Page.java:307  | 26 raw measures: [6 in system#1, 6 in system#2, 5 in system#3, 4 in system#4, 5 in system#5]
+2025-10-06 20:20:43,890 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | CHORDS
+2025-10-06 20:20:43,892 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | CURVES
+2025-10-06 20:20:44,416 INFO [Twinkle_Twinkle_Little_Star#2]         SlursBuilder.java:240  | Slurs: 5
+2025-10-06 20:20:44,689 INFO [Twinkle_Twinkle_Little_Star#2]      SegmentsBuilder.java:155  | Segments: 18
+2025-10-06 20:20:44,691 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | SYMBOLS
+2025-10-06 20:20:44,877 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | LINKS
+2025-10-06 20:20:44,879 INFO [Twinkle_Twinkle_Little_Star#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#2918{(0.130) staff:4 QUINDICESIMA BASSA}
+2025-10-06 20:20:44,887 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | RHYTHMS
+2025-10-06 20:20:44,897 INFO [Twinkle_Twinkle_Little_Star#2]       StepMonitoring.java:98   | PAGE
+2025-10-06 20:20:44,898 WARN [Twinkle_Twinkle_Little_Star#2]         MeasureFixer.java:343  | System#1 No target duration for measures local IDs [1, 2, 3, 4, 5, 6], please check time signatures
+2025-10-06 20:20:44,898 WARN [Twinkle_Twinkle_Little_Star#2]         MeasureFixer.java:343  | System#2 No target duration for measures local IDs [7, 8, 9, 10, 11, 12], please check time signatures
+2025-10-06 20:20:44,898 WARN [Twinkle_Twinkle_Little_Star#2]         MeasureFixer.java:343  | System#3 No target duration for measures local IDs [13, 14, 15, 16, 17], please check time signatures
+2025-10-06 20:20:44,898 WARN [Twinkle_Twinkle_Little_Star#2]         MeasureFixer.java:343  | System#4 No target duration for measures local IDs [18, 19, 20, 21], please check time signatures
+2025-10-06 20:20:44,898 WARN [Twinkle_Twinkle_Little_Star#2]         MeasureFixer.java:343  | System#5 No target duration for measures local IDs [22, 23, 24, 25, 26], please check time signatures
+2025-10-06 20:20:44,898 INFO [Twinkle_Twinkle_Little_Star#2]                 Book.java:2550 | Book{Twinkle_Twinkle_Little_Star} storing
+2025-10-06 20:20:44,921 INFO [Twinkle_Twinkle_Little_Star#2]                 Book.java:2531 | Stored /book.xml
+2025-10-06 20:20:44,980 INFO [Twinkle_Twinkle_Little_Star#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-10-06 20:20:45,311 INFO [Twinkle_Twinkle_Little_Star#2]                Sheet.java:1583 | Stored /sheet#2/sheet#2.xml
+2025-10-06 20:20:45,312 INFO [Twinkle_Twinkle_Little_Star#2]                 Book.java:2491 | Book stored as test_twinkle.mxl/Twinkle_Twinkle_Little_Star.omr
+2025-10-06 20:20:45,313 INFO [Twinkle_Twinkle_Little_Star#2]            SheetStub.java:1660 | Disposed sheet#2
+2025-10-06 20:20:45,345 INFO [Twinkle_Twinkle_Little_Star#2]                 Book.java:2018 | End of Stub#2 memory: 41,980,144
+2025-10-06 20:20:45,345 INFO [Twinkle_Twinkle_Little_Star]                 Book.java:2025 | Book processed.
+2025-10-06 20:20:45,490 INFO [Twinkle_Twinkle_Little_Star]            SheetStub.java:997  | Loaded /sheet#1/sheet#1.xml
+2025-10-06 20:20:45,627 INFO [Twinkle_Twinkle_Little_Star]            SheetStub.java:997  | Loaded /sheet#2/sheet#2.xml
+2025-10-06 20:20:45,783 INFO [Twinkle_Twinkle_Little_Star]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2]
+2025-10-06 20:20:45,821 INFO [Twinkle_Twinkle_Little_Star]        ScoreExporter.java:164  | Score Twinkle_Twinkle_Little_Star exported to test_twinkle.mxl/Twinkle_Twinkle_Little_Star.mxl
+2025-10-06 20:20:45,850 INFO [Twinkle_Twinkle_Little_Star]                Score.java:181  | Closing {Score 1}

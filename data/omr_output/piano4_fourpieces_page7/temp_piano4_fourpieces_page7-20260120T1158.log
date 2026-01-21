@@ -1,0 +1,71 @@
+2026-01-20 11:58:02,123 INFO [temp_piano4_fourpieces_page7]                 Book.java:562  | 1 sheet in /Users/hannahhughes30/PianoToolProject/data/omr_output/temp_piano4_fourpieces_page7.png
+2026-01-20 11:58:02,188 INFO []                 Book.java:2531 | Stored /book.xml
+2026-01-20 11:58:02,189 INFO []                 Book.java:2491 | Book stored as data/omr_output/piano4_fourpieces_page7/temp_piano4_fourpieces_page7.omr
+2026-01-20 11:58:02,190 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2026-01-20 11:58:02,191 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | LOAD
+2026-01-20 11:58:02,336 INFO [temp_piano4_fourpieces_page7]            SheetStub.java:1273 | Loaded image #1 3000x3664 from /Users/hannahhughes30/PianoToolProject/data/omr_output/temp_piano4_fourpieces_page7.png
+2026-01-20 11:58:02,338 INFO [temp_piano4_fourpieces_page7]            ImageUtil.java:124  | Converting max RGB to gray
+2026-01-20 11:58:02,506 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | BINARY
+2026-01-20 11:58:02,853 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | SCALE
+2026-01-20 11:58:02,875 INFO [temp_piano4_fourpieces_page7]         ScaleBuilder.java:241  | Beam  guessed height: 11 -- 0.50 of 22 interline
+2026-01-20 11:58:02,875 INFO [temp_piano4_fourpieces_page7]         ScaleBuilder.java:264  | Beam measured height: 15 -- 0.56 of [6..22] range at 119% of needed quorum
+2026-01-20 11:58:02,876 INFO [temp_piano4_fourpieces_page7]            ScaleStep.java:65   | Scale{ interline(20,22,23) line(3,4,6) beam(15)}
+2026-01-20 11:58:02,876 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | GRID
+2026-01-20 11:58:03,917 INFO [temp_piano4_fourpieces_page7]       LinesRetriever.java:1500 | Global slope: -0.00065
+2026-01-20 11:58:03,965 INFO [temp_piano4_fourpieces_page7]    ClustersRetriever.java:328  | Retrieved raw line clusters: 10 of sizes [5] with interline(20,22,23)
+2026-01-20 11:58:04,218 INFO [temp_piano4_fourpieces_page7]            PeakGraph.java:310  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9] #6[10]
+2026-01-20 11:58:04,731 INFO [temp_piano4_fourpieces_page7]        SystemManager.java:779  | 1 part along 6 systems
+2026-01-20 11:58:04,732 INFO [temp_piano4_fourpieces_page7]                 Book.java:545  | Created scores: [{Score 1}]
+2026-01-20 11:58:04,732 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | HEADERS
+2026-01-20 11:58:04,904 INFO [temp_piano4_fourpieces_page7]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2026-01-20 11:58:04,905 INFO [temp_piano4_fourpieces_page7]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Applications/Audiveris.app/Contents/app/audiveris.jar!/res/basic-classifier.zip
+2026-01-20 11:58:05,550 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | STEM_SEEDS
+2026-01-20 11:58:05,606 INFO [temp_piano4_fourpieces_page7]        StemSeedsStep.java:86   | stem(4 max:8)
+2026-01-20 11:58:05,653 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | BEAMS
+2026-01-20 11:59:04,616 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | LEDGERS
+2026-01-20 11:59:04,803 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | HEADS
+2026-01-20 11:59:09,912 INFO [temp_piano4_fourpieces_page7]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.9,R:-0.2] NOTEHEAD_BLACK[L:-0.1,R:-0.7]}
+2026-01-20 11:59:09,913 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | STEMS
+2026-01-20 11:59:10,326 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | REDUCTION
+2026-01-20 11:59:10,375 INFO [temp_piano4_fourpieces_page7]        ReductionStep.java:105  | Stems free length median value: 77 pixels, 3.5 interlines
+2026-01-20 11:59:10,378 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | CUE_BEAMS
+2026-01-20 11:59:10,378 INFO [temp_piano4_fourpieces_page7]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2026-01-20 11:59:10,378 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | TEXTS
+2026-01-20 11:59:10,487 WARN [temp_piano4_fourpieces_page7]         TesseractOCR.java:335  | The collection of supported languages is empty
+2026-01-20 11:59:10,487 INFO [temp_piano4_fourpieces_page7]              OcrUtil.java:106  | Missing support for 'eng' language(s)
+2026-01-20 11:59:10,492 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | MEASURES
+2026-01-20 11:59:10,497 INFO [temp_piano4_fourpieces_page7]                 Page.java:307  | 22 raw measures: [5 in system#1, 5 in system#2, 5 in system#3, 5 in system#4, 1 in system#5, 1 in system#6]
+2026-01-20 11:59:10,497 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | CHORDS
+2026-01-20 11:59:10,505 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | CURVES
+2026-01-20 11:59:11,687 INFO [temp_piano4_fourpieces_page7]         SlursBuilder.java:240  | Slurs: 30
+2026-01-20 11:59:11,699 INFO [temp_piano4_fourpieces_page7]      SegmentsBuilder.java:155  | Segments: 31
+2026-01-20 11:59:11,704 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | SYMBOLS
+2026-01-20 11:59:12,264 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | LINKS
+2026-01-20 11:59:12,297 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | RHYTHMS
+2026-01-20 11:59:12,327 INFO [temp_piano4_fourpieces_page7]       StepMonitoring.java:98   | PAGE
+2026-01-20 11:59:12,328 INFO [temp_piano4_fourpieces_page7]       SheetReduction.java:154  | Gutter. Different glyphs 2/3 PedalInter#6953{(0.562/0.562) PEDAL_MARK} vs BeamInter#1210{(0.676/0.953) BEAM}
+2026-01-20 11:59:12,328 INFO [temp_piano4_fourpieces_page7]       SheetReduction.java:154  | Gutter. Different glyphs 2/3 PedalInter#6953{(0.562/0.562) PEDAL_MARK} vs BeamInter#1211{(0.662/0.950) BEAM}
+2026-01-20 11:59:12,331 WARN [temp_piano4_fourpieces_page7]         MeasureFixer.java:343  | System#1 No target duration for measures local IDs [1, 2, 3, 4, 5], please check time signatures
+2026-01-20 11:59:12,331 WARN [temp_piano4_fourpieces_page7]         MeasureFixer.java:343  | System#2 No target duration for measures local IDs [6, 7, 8, 9, 10], please check time signatures
+2026-01-20 11:59:12,331 WARN [temp_piano4_fourpieces_page7]         MeasureFixer.java:343  | System#3 No target duration for measures local IDs [11, 12, 13, 14, 15], please check time signatures
+2026-01-20 11:59:12,331 WARN [temp_piano4_fourpieces_page7]         MeasureFixer.java:343  | System#4 No target duration for measures local IDs [16, 17, 18, 19, 20], please check time signatures
+2026-01-20 11:59:12,331 WARN [temp_piano4_fourpieces_page7]         MeasureFixer.java:343  | System#5 No target duration for measures local IDs [21], please check time signatures
+2026-01-20 11:59:12,331 WARN [temp_piano4_fourpieces_page7]         MeasureFixer.java:343  | System#6 No target duration for measures local IDs [22], please check time signatures
+2026-01-20 11:59:12,332 INFO [temp_piano4_fourpieces_page7]                 Book.java:2550 | Book{temp_piano4_fourpieces_page7} storing
+2026-01-20 11:59:12,375 INFO [temp_piano4_fourpieces_page7]                 Book.java:2531 | Stored /book.xml
+2026-01-20 11:59:12,463 INFO [temp_piano4_fourpieces_page7]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2026-01-20 11:59:13,087 INFO [temp_piano4_fourpieces_page7]                Sheet.java:1583 | Stored /sheet#1/sheet#1.xml
+2026-01-20 11:59:13,087 INFO [temp_piano4_fourpieces_page7]                 Book.java:2491 | Book stored as data/omr_output/piano4_fourpieces_page7/temp_piano4_fourpieces_page7.omr
+2026-01-20 11:59:13,090 INFO [temp_piano4_fourpieces_page7]            SheetStub.java:1660 | Disposed sheet
+2026-01-20 11:59:13,121 INFO [temp_piano4_fourpieces_page7]                 Book.java:2018 | End of Stub#1 memory: 30,510,080
+2026-01-20 11:59:13,121 INFO [temp_piano4_fourpieces_page7]                 Book.java:2025 | Book processed.
+2026-01-20 12:00:40,637 INFO [temp_piano4_fourpieces_page7]            SheetStub.java:997  | Loaded /sheet#1/sheet#1.xml
+2026-01-20 12:00:40,819 INFO [temp_piano4_fourpieces_page7]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1]
+2026-01-20 12:00:40,820 INFO [temp_piano4_fourpieces_page7]                 Part.java:351  | Sheet#1 System#1 Part#2{ staves[1,2] configs:[5,5]} dummyPart id: 1
+2026-01-20 12:00:40,823 INFO [temp_piano4_fourpieces_page7]                 Part.java:351  | Sheet#1 System#2 Part#2{ staves[3,4] configs:[5,5]} dummyPart id: 1
+2026-01-20 12:00:40,823 INFO [temp_piano4_fourpieces_page7]                 Part.java:351  | Sheet#1 System#3 Part#2{ staves[5,6] configs:[5,5]} dummyPart id: 1
+2026-01-20 12:00:40,823 INFO [temp_piano4_fourpieces_page7]                 Part.java:351  | Sheet#1 System#4 Part#2{ staves[7,8] configs:[5,5]} dummyPart id: 1
+2026-01-20 12:00:40,831 INFO [temp_piano4_fourpieces_page7]                 Part.java:351  | Sheet#1 System#5 Part#1{ staves[9] configs:[5]} dummyPart id: 2
+2026-01-20 12:00:40,832 INFO [temp_piano4_fourpieces_page7]                 Part.java:351  | Sheet#1 System#6 Part#1{ staves[10] configs:[5]} dummyPart id: 2
+2026-01-20 12:00:40,865 INFO [temp_piano4_fourpieces_page7]        ScoreExporter.java:164  | Score temp_piano4_fourpieces_page7 exported to data/omr_output/piano4_fourpieces_page7/temp_piano4_fourpieces_page7.mxl
+2026-01-20 12:00:40,894 INFO [temp_piano4_fourpieces_page7]                Score.java:181  | Closing {Score 1}
