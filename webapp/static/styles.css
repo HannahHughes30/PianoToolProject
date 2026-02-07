@@ -1,0 +1,86 @@
+:root {
+  --bg: #0b1020;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.12);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+  --accent: #7c5cff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(124,92,255,0.35), transparent 60%),
+              radial-gradient(900px 500px at 80% 30%, rgba(35,196,131,0.18), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+}
+
+.header { margin-bottom: 18px; }
+h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  letter-spacing: -0.4px;
+}
+.sub { margin: 0; color: var(--muted); line-height: 1.35; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  margin-top: 16px;
+}
+
+.label { display:block; margin-bottom: 8px; color: var(--muted); }
+.file {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.25);
+  color: var(--text);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, var(--accent), #a78bfa);
+  border: 1px solid rgba(255,255,255,0.18);
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.hint { color: var(--muted); margin-top: 10px; }
+.h2 { margin: 0 0 8px; font-size: 18px; }
+
+.flash { margin-top: 12px; }
+.flash-item {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255,196,0,0.12);
+  border: 1px solid rgba(255,196,0,0.25);
+  color: rgba(255,255,255,0.95);
+}
+
+.score {
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px dashed rgba(255,255,255,0.20);
+  background: rgba(0,0,0,0.18);
+}
+

@@ -1,0 +1,238 @@
+/* webapp/static/style.css */
+
+:root {
+  --bg1: #0b1020;
+  --bg2: #0f172a;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.14);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.65);
+  --btn: #111827;
+  --btn2: rgba(255,255,255,0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 20% 0%, #18244a 0%, var(--bg1) 35%, var(--bg2) 100%);
+}
+
+.page {
+  width: min(1100px, 92vw);
+  margin: 32px auto 64px;
+}
+
+/* Support both your old header classes and the newer hero/subtitle markup */
+.header h1,
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 44px;
+  letter-spacing: -0.02em;
+}
+
+.sub,
+.subtitle {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  margin: 18px 0;
+  backdrop-filter: blur(10px);
+}
+
+/* Optional compact card used for buttons */
+.card.compact {
+  padding: 14px 18px;
+}
+
+.upload {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* In your HTML your input is plain <input type=file ...> so style both */
+.file,
+.upload input[type="file"] {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+}
+
+.btn,
+.upload button {
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--btn);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.secondary {
+  background: var(--btn2);
+}
+
+.btn.primary {
+  background: #1f2a44;
+  border-color: rgba(255,255,255,0.22);
+}
+
+.hint {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.error {
+  color: #ffd6d6;
+  background: rgba(255, 0, 0, 0.12);
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.row h2 { margin: 0; font-size: 22px; }
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ----------------------------------------------------------------
+   SCORE AREA (IMPORTANT)
+   Your OSMD is using backend: "svg", so the old canvas styles
+   won't apply. We support BOTH:
+   - old: .sheetWrap
+   - new: .score-wrap and .score
+------------------------------------------------------------------ */
+
+/* Old wrapper name */
+.sheetWrap,
+.score-wrap {
+  margin-top: 14px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  overflow: auto;
+  border: 1px solid rgba(0,0,0,0.10);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* If OSMD renders to canvas (older), keep it white */
+.sheetWrap canvas,
+.score-wrap canvas {
+  background: #ffffff !important;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.18);
+  margin: 10px auto;
+  display: block;
+}
+
+/* If OSMD renders to SVG (your current setup), force a white page */
+.score svg,
+.sheetWrap svg,
+.score-wrap svg {
+  background: #ffffff !important;
+}
+
+/* Make sure nothing globally dims the SVG */
+.score,
+#osmd-container,
+.sheetWrap,
+.score-wrap {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Some browsers inherit text fill colors weirdly in dark themes;
+   force OSMD drawing to be readable */
+.score svg text,
+.sheetWrap svg text,
+.score-wrap svg text {
+  fill: #000 !important;
+}
+
+.score svg path,
+.score svg line,
+.sheetWrap svg path,
+.sheetWrap svg line,
+.score-wrap svg path,
+.score-wrap svg line {
+  stroke: #000 !important;
+}
+
+/* ----------------------------------------------------------------
+   PRINT (Save as PDF)
+   Print only the score area nicely.
+------------------------------------------------------------------ */
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+
+  /* Hide upload + buttons area (keep only the sheet music card) */
+  .hero, .header,
+  .card:first-of-type,
+  .card.compact,
+  .actions,
+  .hint,
+  .error {
+    display: none !important;
+  }
+
+  .page { width: 100% !important; margin: 0 !important; }
+
+  .card {
+    border: none !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .sheetWrap,
+  .score-wrap {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .sheetWrap canvas,
+  .score-wrap canvas {
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+
+  .score svg,
+  .sheetWrap svg,
+  .score-wrap svg {
+    background: #fff !important;
+  }
+}
+

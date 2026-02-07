@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Piano Fingering Predictor</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://unpkg.com/opensheetmusicdisplay@1.9.1/build/opensheetmusicdisplay.min.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Piano Fingering Predictor</h1>
+      <p class="subtitle">Upload a MusicXML/MXL file → get fingerings written onto the score (shown below).</p>
+    </header>
+
+    <section class="card">
+      <form class="upload" action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xml,.musicxml,.mxl" required />
+        <button type="submit">Upload &amp; Predict</button>
+      </form>
+
+      {% if result and result.error %}
+        <div class="error">{{ result.error }}</div>
+      {% endif %}
+    </section>
+
+    {% if result and result.ok %}
+      <section class="card compact">
+        <div class="actions">
+          <a class="btn" href="{{ result.csv_url }}">Download CSV</a>
+          <a class="btn primary" href="{{ result.musicxml_url }}">Download fingered MusicXML</a>
+          <button class="btn" type="button" onclick="window.print()">Save as PDF</button>
+        </div>
+      </section>
+
+      <section class="card sheet-card">
+        <div class="row">
+          <h2>Fingered sheet music</h2>
+        </div>
+
+        <div class="score-wrap">
+          <div id="osmd-container" class="score"></div>
+        </div>
+
+        <script>
+          (async function () {
+            const url = "{{ result.musicxml_url }}";
+            const el = document.getElementById("osmd-container");
+
+            el.innerHTML = "";
+
+            const osmd = new opensheetmusicdisplay.OpenSheetMusicDisplay(el, {
+              autoResize: true,
+              drawTitle: true,
+              drawingParameters: "default",
+              backend: "svg"
+            });
+
+            await osmd.load(url);
+            await osmd.render();
+          })().catch(err => {
+            console.error(err);
+            const el = document.getElementById("osmd-container");
+            el.innerHTML = "<div class='error'>Could not render sheet music. Try downloading the MusicXML to verify it was generated.</div>";
+          });
+        </script>
+      </section>
+    {% endif %}
+  </div>
+</body>
+</html>
+

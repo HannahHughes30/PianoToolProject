@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fingered Sheet Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- OpenSheetMusicDisplay -->
+  <script src="https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@1.9.0/build/opensheetmusicdisplay.min.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>Fingered Sheet Music</h1>
+      <p class="sub">
+        Fingerings are rendered directly on the score below.
+      </p>
+
+      <div class="row" style="margin-top:12px;">
+        <a class="btn secondary" href="{{ url_for('download_csv', job_id=job_id) }}">
+          Download CSV
+        </a>
+        <a class="btn secondary" href="{{ url_for('download_musicxml', job_id=job_id) }}">
+          Download MusicXML
+        </a>
+      </div>
+    </header>
+
+    <!-- WHITE PAPER SCORE AREA -->
+    <section class="card">
+      <div class="score-wrap">
+        <div id="osmd-container"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <a class="btn" href="{{ url_for('index') }}">
+        ← Upload another file
+      </a>
+    </section>
+  </div>
+
+  <script>
+    // URL to the fingered MusicXML produced for this job
+    const MUSICXML_URL = "{{ url_for('serve_annotated', filename=musicxml_name) }}";
+
+    async function renderScore() {
+      const osmd = new opensheetmusicdisplay.OpenSheetMusicDisplay(
+        "osmd-container",
+        {
+          backend: "svg",
+          autoResize: true,
+          drawTitle: true,
+          pageFormat: "A4"
+        }
+      );
+
+      await osmd.load(MUSICXML_URL);
+      await osmd.render();
+
+      // Make page breaks visually obvious
+      const container = document.getElementById("osmd-container");
+      const svgs = Array.from(container.querySelectorAll("svg"));
+
+      if (svgs.length > 1) {
+        container.innerHTML = "";
+        svgs.forEach((svg, idx) => {
+          const page = document.createElement("div");
+          page.className = "osmd-page";
+          page.appendChild(svg);
+          container.appendChild(page);
+
+          if (idx < svgs.length - 1) {
+            const br = document.createElement("div");
+            br.className = "page-break-line";
+            container.appendChild(br);
+          }
+        });
+      }
+    }
+
+    renderScore();
+  </script>
+</body>
+</html>
+
